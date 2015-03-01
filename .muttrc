@@ -1,0 +1,51 @@
+# Basic Options --------------------------------------
+set wait_key = no        # shut up, mutt
+set mbox_type = Maildir  # mailbox type
+set timeout = 3          # idle time before scanning
+set imap_idle = yes      # I don't know. This is supposed to keep Mutt from disconnecting. 20141120	
+set mail_check = 60
+set imap_keepalive = 900
+set realname "Douglas Lamb"
+set use_from = yes
+set edit_headers = yes
+unset move               # gmail does that
+set delete               # don't ask, just do
+unset confirmappend      # don't ask, just do!
+set quit                 # don't ask, just do!!
+unset mark_old           # read/new is good enough for me
+set pipe_decode          # strip headers and eval mimes when piping
+set thorough_search      # strip headers and eval mimes before searching
+set editor = "vim"
+set mime_forward = yes   #forward attachments with mail
+set mime_forward_rest = yes #forward attachments with mail
+
+# macro indexes for multiple accounts
+macro index <F4> '<sync-mailbox><enter-command>source ~/.mutt/account.main<enter><change-folder>!<enter>'
+macro index <F5> '<sync-mailbox><enter-command>source ~/.mutt/account.business<enter><change-folder>!<enter>'
+macro index <F6> '<sync-mailbox><enter-command>source ~/.mutt/account.web<enter><change-folder>!<enter>'
+
+source "~/.mutt/account.main"
+
+# Sidebar Patch --------------------------------------
+set sidebar_delim   = '  │'
+set sidebar_visible = yes
+set sidebar_width   = 24
+color sidebar_new color221 color233
+
+# Status Bar -----------------------------------------
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+# Header Options -------------------------------------
+ignore *                                # ignore all headers
+unignore from: to: cc: date: subject:   # show only these
+unhdr_order *                           # some distros order things by default
+hdr_order from: to: cc: date: subject:  # and in this order
+
+#TLS setting(s)
+
+set ssl_force_tls=yes
+
+#Format-Flowed
+
+set text_flowed = yes
