@@ -7,6 +7,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" ag.vim
+Plugin 'rking/ag.vim'
+
 " vim-hackernews
 Plugin 'ryanss/vim-hackernews'
 
@@ -24,9 +27,6 @@ Plugin 'scrooloose/nerdtree'
 
 " CTRLP
 Plugin 'kien/ctrlp.vim'
-
-" ack.vim
-Plugin 'mileszs/ack.vim'
 
 " vim-multiple-cursors
 Plugin 'terryma/vim-multiple-cursors'
