@@ -44,6 +44,9 @@ Plugin 'tpope/vim-vividchalk'
 " Distinguished
 Plugin 'Lokaltog/vim-distinguished'
 
+" Tomorrow
+Plugin 'ChrisKempson/Vim-Tomorrow-Theme'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -62,8 +65,8 @@ filetype plugin indent on    " required
 syntax on
 set nocompatible
 set number
-set background=dark 
-colorscheme vividchalk
+set background=light 
+colorscheme Tomorrow
 set backspace=2
 set expandtab
 set shiftwidth=2
