@@ -1,4 +1,5 @@
 (require 'org)
+(require 'package) ;; You might already have this line
 
 (global-visual-line-mode t)
 
