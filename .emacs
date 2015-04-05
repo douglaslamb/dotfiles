@@ -119,5 +119,8 @@
   (interactive)
   (org-agenda-do-date-later 1))
 
+(setq org-agenda-ndays 1)
+
 (setq inhibit-splash-screen t)
-(find-file "~/org/personal/personal.org")
+(org-agenda-list)
+(delete-other-windows)
