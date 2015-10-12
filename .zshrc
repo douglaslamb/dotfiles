@@ -77,6 +77,7 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias love="/Applications/love.app/Contents/MacOS/love"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.rbenv/bin:$PATH"
