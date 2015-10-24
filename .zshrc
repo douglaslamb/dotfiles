@@ -82,3 +82,4 @@ alias love="/Applications/love.app/Contents/MacOS/love"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+setopt extended_glob
