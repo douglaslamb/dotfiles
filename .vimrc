@@ -47,6 +47,9 @@ Plugin 'Lokaltog/vim-distinguished'
 " Tomorrow
 Plugin 'ChrisKempson/Vim-Tomorrow-Theme'
 
+" scvim
+Plugin 'sbl/scvim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
