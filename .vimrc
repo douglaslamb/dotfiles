@@ -79,4 +79,7 @@ filetype indent on
 filetype plugin on
 filetype plugin indent on
 
+" scvim
+let g:sclangTerm = "open -a iterm.app"
+
 autocmd FileType mail setlocal fo+=aw

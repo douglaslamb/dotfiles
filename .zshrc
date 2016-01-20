@@ -53,6 +53,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/Volumes/android/WORKING_DIRECTORY:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:$HOME/bin"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="$HOME/.node/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
