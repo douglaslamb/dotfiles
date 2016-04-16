@@ -10,6 +10,9 @@ Plugin 'gmarik/Vundle.vim'
 " ag.vim
 Plugin 'rking/ag.vim'
 
+"vim-go golang support
+Plugin 'fatih/vim-go'
+
 " vim-hackernews
 Plugin 'ryanss/vim-hackernews'
 
