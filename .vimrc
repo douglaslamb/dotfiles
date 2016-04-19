@@ -83,7 +83,8 @@ filetype plugin on
 filetype plugin indent on
 
 " golang setting
-let g:gofmt_commaned ="goimports"
+let g:go_fmt_command ="goimports"
+let g:go_fmt_autosave = 1
 
 " scvim
 let g:sclangTerm = "open -a iterm.app"
