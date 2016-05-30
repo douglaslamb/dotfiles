@@ -86,3 +86,4 @@ export PATH="$HOME/gocode/bin:$PATH"
 export GOPATH="$HOME/gocode"
 eval "$(rbenv init -)"
 setopt extended_glob
+. resty
