@@ -84,5 +84,6 @@ alias love="/Applications/love.app/Contents/MacOS/love"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/gocode/bin:$PATH"
 export GOPATH="$HOME/gocode"
+eval "$(rbenv init -)"
 setopt extended_glob
 . resty
