@@ -97,3 +97,6 @@ fi
 if [ -f /Users/rocker/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/rocker/Downloads/google-cloud-sdk/completion.zsh.inc'
 fi
+
+# add aws ssh pem file
+ssh-add ~/.ssh/LightsailDefaultPrivateKey.pem
