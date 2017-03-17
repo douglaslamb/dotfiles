@@ -55,6 +55,7 @@ export PATH="/usr/local/bin:/Volumes/android/WORKING_DIRECTORY:/Library/Framewor
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/.node/bin:$PATH"
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH="/usr/local/go/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
