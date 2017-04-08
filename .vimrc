@@ -1,72 +1,32 @@
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+call plug#begin('~/.vim/plugged')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" ag.vim
-Plugin 'rking/ag.vim'
-
 "vim-go golang support
-Plugin 'fatih/vim-go'
-
-" vim-hackernews
-Plugin 'ryanss/vim-hackernews'
-
-" Vim-fugitive
-Plugin 'tpope/vim-fugitive'
-
-" vim-repeat
-Plugin 'tpope/vim-repeat'
-
-" vim-surround
-Plugin 'tpope/vim-surround'
-
-" NERDTREE
-Plugin 'scrooloose/nerdtree'
-
-" CTRLP
-Plugin 'kien/ctrlp.vim'
-
-" vim-multiple-cursors
-Plugin 'terryma/vim-multiple-cursors'
-
-" easymotion
-Plugin 'lokaltog/vim-easymotion'
+Plug 'fatih/vim-go'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'sbl/scvim'
 
 " COLOR SCHEMES
-" Solarized
-Plugin 'altercation/vim-colors-solarized'
-
-" Vividchalk
-Plugin 'tpope/vim-vividchalk'
-
-" Distinguished
-Plugin 'Lokaltog/vim-distinguished'
-
 " Tomorrow
-Plugin 'ChrisKempson/Vim-Tomorrow-Theme'
+Plug 'ChrisKempson/Vim-Tomorrow-Theme'
 
-" scvim
-Plugin 'sbl/scvim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+"call vundle#end()            " required
+call plug#end()
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 syntax on
 set nocompatible
