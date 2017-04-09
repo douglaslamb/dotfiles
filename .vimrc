@@ -14,6 +14,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'sbl/scvim'
+Plug 'valloric/youcompleteme'
 
 " COLOR SCHEMES
 " Tomorrow
@@ -23,7 +24,6 @@ Plug 'ChrisKempson/Vim-Tomorrow-Theme'
 " All of your Plugins must be added before the following line
 "call vundle#end()            " required
 call plug#end()
-filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -37,9 +37,6 @@ set backspace=2
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-filetype on
-filetype indent on
-filetype plugin on
 filetype plugin indent on
 
 " golang setting
@@ -48,5 +45,4 @@ let g:go_fmt_autosave = 1
 
 " scvim
 let g:sclangTerm = "open -a iterm.app"
-
 autocmd FileType mail setlocal fo+=aw
