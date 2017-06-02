@@ -3,6 +3,8 @@
 
 (global-visual-line-mode t)
 
+(add-to-list 'package-archives
+	     `("melpa-stable" . "http://stable.melpa.org/packages/"))
 (add-to-list 'load-path "~/emacs_load-path")
 (add-to-list 'load-path "~/emacs_load-path/htmlize")
 
@@ -94,7 +96,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
    (quote
-    ("~/org/personal/personal.org" "~/org/ass/ass.org" "~/org/darkshow/darkshow.org"))))
+    ("~/org/personal/personal.org"))))
 ;; (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

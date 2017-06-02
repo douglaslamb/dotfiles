@@ -74,6 +74,9 @@ export EDITOR='vim'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+#
+# Python stuff for virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
