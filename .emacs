@@ -17,6 +17,9 @@
 ;;(require 'calfw)
 ;;(require 'calfw-org)
 
+;; set orgmode to add a timestamp to a headline when it is marked done
+(setq org-log-done 'time)
+
 (ido-mode t)
 
 (setq ido-create-new-buffer 'always)
