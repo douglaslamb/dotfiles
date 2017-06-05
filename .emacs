@@ -40,7 +40,7 @@
 (defun my-org-archive-done-tasks ()
   (setq org-map-continue-from (outline-next-heading))
   (interactive)
-  (org-map-entries 'org-archive-subtree "/DONE" 'file))
+  (org-map-entries 'org-archive-subtree "/CANCELLED" 'file))
 
 ;; Capture
 (global-set-key (kbd "C-c r") 'org-capture)
@@ -111,6 +111,40 @@
 ;; 140 :width normal :foundry "apple" :family "Inconsolata")))))
 
 (setq org-agenda-sorting-strategy `(time-up priority-down todo-state-down))
+(setq org-agenda-tags-todo-honor-ignore-options t)
+
+(setq org-agenda-custom-commands
+      '(("d" "Day's agenda"
+	 ((agenda "")
+	  (tags-todo "mit&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "MITs\n----------------")))))
+	("r" "Day's agenda and big rocks"
+	 ((agenda "")
+	  (tags-todo "mit&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "MITs\n----------------")))
+	  (tags-todo "br&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "Big Rocks\n----------------")))))
+      ("l" "Day's agenda, big rocks, and lmds"
+         ((agenda "")
+	  (tags-todo "mit&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "MITs\n----------------")))
+	  (tags-todo "br&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "Big Rocks\n----------------")))
+	  (tags-todo "lmd&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "LMDs\n----------------")))))
+      ("p" "Day's agenda, big rocks, lmds, and sand"
+       ((agenda "")
+	  (tags-todo "mit&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "MITs\n----------------")))
+	  (tags-todo "br&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "Big Rocks\n----------------")))
+	  (tags-todo "lmd&PRIORITY=\"A\""
+		     ((org-agenda-overriding-header "LMDs\n----------------")))
+          (tags-todo "+PRIORITY=\"A\"-br-lmd"
+		     ((org-agenda-overriding-header "sand\n----------------")
+		      (org-agenda-todo-ignore-timestamp "all")
+		      (org-agenda-todo-ignore-with-date t)))))
+      ))
 
 (setq default-frame-alist '((width . 96) (height . 60)))
 (custom-set-faces
