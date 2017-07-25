@@ -85,6 +85,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 #
 # Example aliases
 alias love="/Applications/love.app/Contents/MacOS/love"
+alias gcc="gcc-7" #use homebrew gcc
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.rbenv/bin:$PATH"
