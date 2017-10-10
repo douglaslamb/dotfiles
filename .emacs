@@ -140,10 +140,13 @@
 		     ((org-agenda-overriding-header "Big Rocks\n----------------")))
 	  (tags-todo "lmd&PRIORITY=\"A\""
 		     ((org-agenda-overriding-header "LMDs\n----------------")))
-          (tags-todo "+PRIORITY=\"A\"-br-lmd"
+          (tags-todo "+PRIORITY=\"A\"-br-lmd-fun"
 		     ((org-agenda-overriding-header "sand\n----------------")
 		      (org-agenda-todo-ignore-timestamp "all")
 		      (org-agenda-todo-ignore-with-date t)))))
+      ("f" "Fun stuff"
+       ((tags-todo "fun"
+		   ((org-agenda-overriding-header "Fun things to do\n---------------")))))
       ))
 
 (setq default-frame-alist '((width . 96) (height . 60)))
