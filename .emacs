@@ -172,5 +172,5 @@
 (setq org-agenda-ndays 1)
 
 (setq inhibit-splash-screen t)
-(org-agenda-list)
+(org-agenda nil "d")
 (delete-other-windows)
