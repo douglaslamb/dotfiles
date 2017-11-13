@@ -116,16 +116,22 @@
 (setq org-agenda-custom-commands
       '(("d" "Day's agenda"
 	 ((agenda "")
+	  (tags "reminder"
+		     ((org-agenda-overriding-header "reminders\n----------------")))
 	  (tags-todo "mit&PRIORITY=\"A\""
 		     ((org-agenda-overriding-header "MITs\n----------------")))))
 	("r" "Day's agenda and big rocks"
 	 ((agenda "")
+	  (tags "reminder"
+		     ((org-agenda-overriding-header "reminders\n----------------")))
 	  (tags-todo "mit&PRIORITY=\"A\""
 		     ((org-agenda-overriding-header "MITs\n----------------")))
 	  (tags-todo "br&PRIORITY=\"A\""
 		     ((org-agenda-overriding-header "Big Rocks\n----------------")))))
       ("l" "Day's agenda, big rocks, and lmds"
-         ((agenda "")
+       ((agenda "")
+	  (tags "reminder"
+		     ((org-agenda-overriding-header "reminders\n----------------")))
 	  (tags-todo "mit&PRIORITY=\"A\""
 		     ((org-agenda-overriding-header "MITs\n----------------")))
 	  (tags-todo "br&PRIORITY=\"A\""
@@ -134,6 +140,8 @@
 		     ((org-agenda-overriding-header "LMDs\n----------------")))))
       ("p" "Day's agenda, big rocks, lmds, and sand"
        ((agenda "")
+	  (tags "reminder"
+		     ((org-agenda-overriding-header "reminders\n----------------")))
 	  (tags-todo "mit&PRIORITY=\"A\""
 		     ((org-agenda-overriding-header "MITs\n----------------")))
 	  (tags-todo "br&PRIORITY=\"A\""
