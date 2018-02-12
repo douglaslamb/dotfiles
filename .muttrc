@@ -21,6 +21,7 @@ set mime_forward_rest = yes #forward attachments with mail
 
 # macro indexes for multiple accounts
 macro index <F4> '<sync-mailbox><enter-command>source ~/.mutt/account.main<enter><change-folder>!<enter>'
+macro index <F5> '<sync-mailbox><enter-command>source ~/.mutt/account.gmail<enter><change-folder>!<enter>'
 #macro index <F5> '<sync-mailbox><enter-command>source ~/.mutt/account.business<enter><change-folder>!<enter>'
 #macro index <F6> '<sync-mailbox><enter-command>source ~/.mutt/account.web<enter><change-folder>!<enter>'
 

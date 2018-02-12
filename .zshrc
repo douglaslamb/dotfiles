@@ -56,7 +56,13 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/.node/bin:$PATH"
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH="/usr/local/go/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+#
+# SET PKG_CONFIG_PATH to include Homebrew keg only packages so that
+# software built without Homebrew can rely on Homebrew keg only packages.
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
